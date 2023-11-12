@@ -34,5 +34,16 @@ namespace WinFormMiniProject
         {
             addresses.Add(address);
         }
+
+        private void saveRecordButton_Click(object sender, EventArgs e)
+        {
+            PersonModel person = new PersonModel
+            {
+                FirstName = firstNameText.Text,
+                LastName = lastNameText.Text,
+                IsActive = isActive.Checked,
+                Addresses = addresses.ToList()
+            };
+        }
     }
 }

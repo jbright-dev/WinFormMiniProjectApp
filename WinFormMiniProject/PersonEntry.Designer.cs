@@ -126,6 +126,7 @@
             this.saveRecordButton.TabIndex = 5;
             this.saveRecordButton.Text = "Save";
             this.saveRecordButton.UseVisualStyleBackColor = true;
+            this.saveRecordButton.Click += new System.EventHandler(this.saveRecordButton_Click);
             // 
             // PersonEntry
             // 
