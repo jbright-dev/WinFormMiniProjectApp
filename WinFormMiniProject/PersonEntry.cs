@@ -1,4 +1,5 @@
-﻿using DemoLibrary.Models;
+﻿using DemoLibrary.Interfaces;
+using DemoLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +12,7 @@ using System.Windows.Forms;
 
 namespace WinFormMiniProject
 {
-    public partial class PersonEntry : Form
+    public partial class PersonEntry : Form, ISaveAddress
     {
         BindingList<AddressModel> addresses = new BindingList<AddressModel>();
         public PersonEntry()
@@ -19,13 +20,19 @@ namespace WinFormMiniProject
             InitializeComponent();
 
             addressesList.DataSource = addresses;
+
             addressesList.DisplayMember = nameof(AddressModel.AddressDisplayValue);
         }
 
         private void addNewAddressButton_Click(object sender, EventArgs e)
         {
-            AddressEntry entry = new AddressEntry();
+            AddressEntry entry = new AddressEntry(this);
+
             entry.Show();
+        }
+        public void SaveAddress(AddressModel address)
+        {
+            addresses.Add(address);
         }
     }
 }

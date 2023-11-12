@@ -122,6 +122,7 @@
             this.saveAddressButton.TabIndex = 8;
             this.saveAddressButton.Text = "Save";
             this.saveAddressButton.UseVisualStyleBackColor = true;
+            this.saveAddressButton.Click += new System.EventHandler(this.saveAddressButton_Click);
             // 
             // AddressEntry
             // 
