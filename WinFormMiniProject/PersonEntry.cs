@@ -12,6 +12,7 @@ namespace WinFormMiniProject
 {
     public partial class PersonEntry : Form
     {
+        BindingList<AddressModel>
         public PersonEntry()
         {
             InitializeComponent();
