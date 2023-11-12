@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoLibrary
+namespace DemoLibrary.Models
 {
     public class AddressModel
     {
@@ -13,5 +12,6 @@ namespace DemoLibrary
         public string City { get; set; }
         public string State { get; set; }
         public string ZipCode { get; set; }
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoLibrary.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace WinFormMiniProject
 {
     public partial class PersonEntry : Form
     {
-        BindingList<AddressModel>
+        BindingList<AddressModel> addresses = new BindingList<AddressModel>();
         public PersonEntry()
         {
             InitializeComponent();
