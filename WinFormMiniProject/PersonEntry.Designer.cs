@@ -70,7 +70,7 @@
             this.lastNameText.Location = new System.Drawing.Point(197, 122);
             this.lastNameText.Name = "lastNameText";
             this.lastNameText.Size = new System.Drawing.Size(411, 37);
-            this.lastNameText.TabIndex = 1;
+            this.lastNameText.TabIndex = 2;
             // 
             // isActive
             // 
@@ -78,7 +78,7 @@
             this.isActive.Location = new System.Drawing.Point(197, 180);
             this.isActive.Name = "isActive";
             this.isActive.Size = new System.Drawing.Size(15, 14);
-            this.isActive.TabIndex = 2;
+            this.isActive.TabIndex = 3;
             this.isActive.UseVisualStyleBackColor = true;
             // 
             // isActiveLabel
@@ -116,13 +116,14 @@
             this.addNewAddressButton.TabIndex = 4;
             this.addNewAddressButton.Text = "Add";
             this.addNewAddressButton.UseVisualStyleBackColor = true;
+            this.addNewAddressButton.Click += new System.EventHandler(this.addNewAddressButton_Click);
             // 
             // saveRecordButton
             // 
             this.saveRecordButton.Location = new System.Drawing.Point(348, 473);
             this.saveRecordButton.Name = "saveRecordButton";
             this.saveRecordButton.Size = new System.Drawing.Size(230, 39);
-            this.saveRecordButton.TabIndex = 4;
+            this.saveRecordButton.TabIndex = 5;
             this.saveRecordButton.Text = "Save";
             this.saveRecordButton.UseVisualStyleBackColor = true;
             // 

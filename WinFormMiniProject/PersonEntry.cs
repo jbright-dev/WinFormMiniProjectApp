@@ -17,7 +17,15 @@ namespace WinFormMiniProject
         public PersonEntry()
         {
             InitializeComponent();
+
+            addressesList.DataSource = addresses;
+            addressesList.DisplayMember = nameof(AddressModel.AddressDisplayValue);
         }
 
+        private void addNewAddressButton_Click(object sender, EventArgs e)
+        {
+            AddressEntry entry = new AddressEntry();
+            entry.Show();
+        }
     }
 }
